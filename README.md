@@ -16,6 +16,7 @@ A fully-featured scientific calculator built with Python and Streamlit — clean
 | **Constants** | π, e, φ (golden ratio) |
 | **Utility** | Percentage, Absolute Value, Reciprocal (1/x), Modulo |
 | **History** | Last 15 calculations, clearable |
+| **Function Grapher** | Plot up to 3 functions simultaneously over a custom x range |
 
 ---
 
@@ -94,7 +95,35 @@ calc.last_result()     # most recent result
 
 ---
 
+## Function Grapher
+
+The **📈 Function Grapher** tab lets you plot mathematical functions interactively.
+
+- Plot **up to 3 functions** at once (color-coded blue, orange, green)
+- Set a **custom x range** (e.g. −10 to 10)
+- Choose from **built-in presets** (sin & cos, polynomials, exponentials, etc.)
+- Supports all standard math syntax:
+
+```
+sin(x)   cos(x)   tan(x)   exp(x)   log(x)
+sqrt(x)  abs(x)   x**2     x**3     pi    e
+```
+
+**Example expressions:**
+
+| Expression | Description |
+|---|---|
+| `sin(x)` | Sine wave |
+| `x**2 - 4` | Parabola shifted down |
+| `exp(-x**2)` | Gaussian bell curve |
+| `log(abs(x) + 0.1)` | Log with domain guard |
+| `sin(x) / x` | Sinc function |
+
+---
+
 ## Requirements
 
 - Python 3.9+
 - streamlit
+- numpy
+- matplotlib
